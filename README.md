@@ -2,5 +2,6 @@
 
 - Welcome all to the Totally Not MD Mini-Hackathon!
 - The hackathon rules can be found [here](https://github.com/TNMDCollaborationWeek).
-- The challenges can also be found at the link above (released around 12:30 PM AEST, 28/07/22).
+- The challenges have been released, you can find them [here](https://github.com/TNMDCollaborationWeek/Challenges).
+	- Note that we can be flexible with how we approach these challenges, think of them more as guidelines than specific rules.
 
