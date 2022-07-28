@@ -45,4 +45,11 @@
 - **Dream destination**: :house::video_game:
 
 
+---
 
+## Jennie
+
+- **Programming proficiency**: 🟢🟢⚪
+- **Git proficiency**: 🟢⚪⚪
+- **GitHub proficiency**: 🟢⚪⚪
+- **Dream destination**: :palm_tree:
