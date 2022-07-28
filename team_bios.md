@@ -9,7 +9,6 @@
 
 ---
 
-
 ## Yamni
 
 - **Programming proficiency**: 🟢🟢⚪
@@ -52,3 +51,12 @@
 - **Git proficiency**: ⚪⚪⚪
 - **GitHub proficiency**: ⚪⚪⚪
 - **Dream destination**: :airplane: :beach_umbrella: :tropical_drink:
+
+---
+
+## Jennie
+
+- **Programming proficiency**: 🟢🟢⚪
+- **Git proficiency**: 🟢⚪⚪
+- **GitHub proficiency**: 🟢⚪⚪
+- **Dream destination**: :palm_tree:
