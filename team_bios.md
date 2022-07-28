@@ -34,3 +34,15 @@
 - **Git proficiency**: 🟢⚪⚪
 - **GitHub proficiency**: ⚪⚪⚪
 - **Dream destination**: 🇳🇴 🇦🇶 🇨🇽
+
+---
+
+## Nelson
+
+- **Programming proficiency**: 🟢🟢⚪
+- **Git proficiency**: 🟢⚪⚪
+- **GitHub proficiency**: 🟢⚪⚪
+- **Dream destination**: :house::video_game:
+
+
+
