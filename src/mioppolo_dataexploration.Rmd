@@ -1,0 +1,66 @@
+---
+title: "Exploring open air quality data"
+output: html_notebook
+---
+
+# Load data using Yamni's code :)
+
+```{r}
+library(tidyverse)
+library(lubridate)
+library(feasts)
+library(lattice)
+library(tsibble)
+
+data <- read.csv("C:/Users/Mark/Documents/git/TNMD-mini-hackathon/air_quality_data/Air_Quality_Monitoring_Data.csv")
+data<- data %>% 
+      mutate(DateTime2= dmy_hms(DateTime, tz= "Australia/ACT")) %>% #Thanks Mark!
+  arrange(DateTime2)
+
+
+data_monash<- data %>% 
+  filter(Name=="Monash") %>% 
+  distinct(DateTime2, .keep_all=TRUE) %>% # This is an inbuilt R function. Not sure which value it actually chooses.
+  drop_na(DateTime2) %>% 
+  as_tsibble(index=DateTime2, key= Name) %>% 
+  fill_gaps()
+
+data_civic<- data%>% 
+  filter(Name=="Civic") %>% 
+  distinct(DateTime2, .keep_all=TRUE) %>% 
+  drop_na(DateTime2) %>% 
+  as_tsibble(index=DateTime2, key= Name) %>% 
+  fill_gaps()
+
+data_florey<- data%>%
+  filter(Name=="Florey") %>% 
+  distinct(DateTime2, .keep_all=TRUE) %>% 
+  drop_na(DateTime2) %>% 
+  as_tsibble(index=DateTime2, key= Name) %>% 
+  fill_gaps()
+
+data_clean<- bind_rows(data_monash, data_civic, data_florey) # This is a clean time series - all dates/times from the start to end date are covered.
+```
+# Plots
+I've focused on Monash and Florey because Civic has a lot of missing data.
+
+```{r}
+# Monash
+data_clean %>% filter(Name=="Monash") %>%
+  ggplot(
+    aes(x=DateTime2,
+        y=CO, 
+        color=Name)
+  ) + geom_line() + ylim(0,5) + xlab("Time") + ylab("CO (ppm)")
+```
+
+```{r}
+# Florey
+data %>% filter(Name=="Florey") %>%
+  ggplot(aes(x=DateTime2,y=CO, color=Name)) + geom_line() + xlab("Time") + ylab("CO (ppm)")
+```
+
+```{r}
+# I don't know how to turn this into a line plot
+with(data, xyplot(PM2.5~DateTime2|Name, xlab="Time", ylab="PM2.5"))
+```
