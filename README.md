@@ -12,38 +12,46 @@ This document will complement the ACT air quality dataset by providing a summary
 
 ## Dataset summary
 
-Air quality is recorded at 3 sites blah blah Table 3 rows data Site name (location) - coordinates - data available from this date
+Air quality is recorded at 3 sites across the ACT at the top of each hour, the data availability varies by site and for some data items are missing for long periods of time. 
 
-## Some description of data. (it's very rough maybe we can make a pretty table)
+| Site name | Coordinates | Data Availability|
+|---|---|---|
+|Civic (Central Canberra)|(-35.285399, 149.131536)|Since Jan 2012|
+|Florey (North Canberra)|(-35.220606, 149.0435)|Since Feb 2014|
+|Monash (South Canberra)|(-35.418302, 149.094018)|Since Jan 2012|
 
-The raw Air_Quality_Monitoring_Data.csv contains the following columns:
+At time of writing the most recent data was for 2022-07-28 13:00:00 AEST
 
-1)  "Name"- Location of sensor, 3 unique values- "Florey", "Monash", "Civic"
-2)  "GPS"
-3)  "DateTime" - Start date: "2012-01-01 07:00:00 AEDT", End date: "2022-07-28 13:00:00 AEST"
-4)  "NO2"
-5)  "O3_1hr"
-6)  "O3_4hr"
-7)  "O3_8hr"
-8)  "CO"
-9)  "PM10.1.hr"
-10) "PM2.5.1.hr"
-11) "PM10"
-12) "PM2.5"
-13) "AQI_CO"
-14) "AQI_NO2"
-15) "AQI_O3_1hr"
-16) "AQI_O3_4hr"
-17) "AQI_O3_8hr"
-18) "AQI_PM10"
-19) "AQI_PM2.5"
-20) "AQI_Site"
-21) "Date": Date in dd/ month/ YYYY
-22) "Time" : Time mostly HH:MM but some different formats in there
+## Data items
 
-Data Cleaning:
+|Data item name|Description/unit|
+|---|---|
+|Name|Location of sensor|
+|GPS|Latitude and longitude|
+|DateTime|dd/mm/yyyy hh:mm|
+|NO2|NO2 concentration averaged over 1 hour in ppm|
+|O3_1hr|O3 concentration averaged over 1 hours in ppm|
+|O3_4hr|O3 concentration averaged over 4 hours in ppm|
+|O3_8hr|O3 concentration averaged over 8 hours in ppm|
+|CO|NO2 concentration averaged over 8 hours in ppm|
+|PM10.1.hr|P10 particulates averaged over 1 hour in ug/m^3|
+|PM2.5.1.h|P2.5 particulates averaged over 1 hour in ug/m^3|
+|PM10|P10 particulates averaged over 24 hours in ug/m^3|
+|PM2.5|P2.5 particulates averaged over 24 hours in ug/m^3|
+|AQI_CO|CO component of Air Quality Index|
+|AQI_NO2|NO2 component of Air Quality Index|
+|AQI_O3_1hr|1 hour O3 component of Air Quality Index|
+|AQI_O3_4hr|4 hour O3 component of Air Quality Index|
+|AQI_O3_8hr|8 hour O3 component of Air Quality Index|
+|AQI_PM10|component of Air Quality Index|
+|AQI_PM2.5|component of Air Quality Index|
+|AQI_Site|Overall Air quality index for the measurement site|
+|Date|Date in  dd/ month/ YYYY|
+|Time|Time mostly HH:MM|
 
-Dates: removed duplicate date times, added missing date times to complete time series
+### Data Cleaning steps
+
+Removed duplicate date times, and added missing date times to complete time series
 
 ## Data quality
 
