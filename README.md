@@ -54,14 +54,20 @@ Some issues observed with the original dataset were:
 
 - The reference period of the data was not provided upfront.
 - The dataset was not sorted in any particular order. Given the time series nature of the data it would be useful to sort it by location and time.
-- There are missing observations, most notably the latter part of 2012 and all of 2013.
-- Duplicate records for the same location and time with different observation measurements. It would be useful to have information on why duplicates occur to inform which observations should be used.
+- There are missing observations, most notably the latter part of 2012 and all of 2013. The following graph shows the CO concentration at the Monash sensor. Note the large gap in data corresponding to 2013.
 
-Duplicate rows
+![](img/monash.png)
 
-Missing records
+- Duplicate records for the same location and time with different observation measurements. Some records are duplicated upto 20 times in the date. It would be useful to have information on why duplicates occur to inform which observations should be used. The below image shows examples of duplicated records.
+
+![](img/example_duplicate_values.PNG)
 
 ## Case study visualisations
+
+Time series showing the monthly averages of the AQI_site data starting form 2014 to the latest date available. Note the large spike around Christmas 2019 corresponding to the bushfires that affected south east Australia during this time.
+![](img/Monthly_Graph.png)
+
+Graph showing the Air Quality Index in December 2019.
 ![](img/bushfire_Jan2020.png)
 
 ## Key links
