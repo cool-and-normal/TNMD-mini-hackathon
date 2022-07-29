@@ -56,7 +56,7 @@ Some issues observed with the original dataset were:
 
 Duplicate rows
 
-Missing records The percentage of missing records are summarised below for each site.
+The percentage of missing records are summarised below for each site.
 
 |            | Civic      | Florey     | Monash     |
 |------------|------------|------------|------------|
