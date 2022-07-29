@@ -55,7 +55,7 @@ Duplicate rows
 Missing records
 
 ## Case study visualisations
-
+![](img/bushfire_Jan2020.png)
 
 ## Key links
 
