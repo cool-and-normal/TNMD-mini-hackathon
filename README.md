@@ -64,9 +64,6 @@ Some issues observed with the original dataset were:
 
 ![](img/example_duplicate_values.PNG)
 
-![](img/monash.png)
-
-
 The percentage of missing records are summarised below for each site.
 
 |            | Civic      | Florey     | Monash     |
@@ -88,9 +85,6 @@ The percentage of missing records are summarised below for each site.
 | AQI_PM10   | 5.850136   | 3.582256   | 2.334802   |
 | AQI_PM2.5  | 28.074569  | 5.107604   | 12.872710  |
 | AQI_Site   | 0.02925653 | 0.64167924 | 0.51472293 |
-
-
-
 
 
 ## Case study visualisations
