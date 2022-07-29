@@ -47,8 +47,8 @@ At time of writing the most recent data was for 2022-07-28 13:00:00 AEST
 |AQI_PM2.5|component of Air Quality Index|
 |AQI_Site|Overall Air quality index for the measurement site|
 |Date|Date in  dd/ month/ YYYY|
-|Time||
-|Time mostly HH:MM||
+|Time|Time mostly HH:MM|
+
 
 
 ### Data Cleaning steps
