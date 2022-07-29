@@ -1,6 +1,14 @@
-# TNMD-mini-hackathon
+# TNMD Hackathon Theme 2 - Open Data - ACT Air quality monitoring data
 
-- Welcome all to the Totally Not MD Mini-Hackathon!
-- The hackathon rules can be found [here](https://github.com/TNMDCollaborationWeek).
-- The challenges can also be found at the link above (released around 12:30 PM AEST, 28/07/22).
+## Key links
+
+[Air Quality Monitoring Data @ data.gov.au](https://data.gov.au/dataset/ds-act-https%3A%2F%2Fwww.data.act.gov.au%2Fapi%2Fviews%2F94a5-zqnn/details?q)
+
+[Information on ACT Air quality monitoring including "live" monitoring](https://www.health.act.gov.au/about-our-health-system/population-health/environmental-monitoring/monitoring-and-regulating-air)
+
+
+
+
+
+
 
