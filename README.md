@@ -50,6 +50,13 @@ Dates: removed duplicate date times, added missing date times to complete time s
 
 ## Data quality
 
+Some issues observed with the original dataset were:
+
+- The reference period of the data was not provided upfront.
+- The dataset was not sorted in any particular order. Given the time series nature of the data it would be useful to sort it by location and time.
+- There are missing observations, most notably the latter part of 2012 and all of 2013.
+- Duplicate records for the same location and time with different observation measurements. It would be useful to have information on why duplicates occur to inform which observations should be used.
+
 Duplicate rows
 
 Missing records
