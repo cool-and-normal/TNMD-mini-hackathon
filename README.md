@@ -60,9 +60,12 @@ Some issues observed with the original dataset were:
 -   The reference period of the data was not provided upfront.
 -   The dataset was not sorted in any particular order. Given the time series nature of the data it would be useful to sort it by location and time.
 -   There are missing observations, most notably the latter part of 2012 and all of 2013.
--   Duplicate records for the same location and time with different observation measurements. It would be useful to have information on why duplicates occur to inform which observations should be used.
+-   Duplicate records for the same location and time with different observation measurements. Some records are duplicated upto 20 times in the date. It would be useful to have information on why duplicates occur to inform which observations should be used. The below image shows examples of duplicated records.
 
-Duplicate rows
+![](img/example_duplicate_values.PNG)
+
+![](img/monash.png)
+
 
 The percentage of missing records are summarised below for each site.
 
@@ -86,9 +89,18 @@ The percentage of missing records are summarised below for each site.
 | AQI_PM2.5  | 28.074569  | 5.107604   | 12.872710  |
 | AQI_Site   | 0.02925653 | 0.64167924 | 0.51472293 |
 
+
+
+
+
 ## Case study visualisations
 
+Time series showing the monthly averages of the AQI_site data starting form 2014 to the latest date available. Note the large spike around Christmas 2019 corresponding to the bushfires that affected south east Australia during this time.
+![](img/Monthly_Graph.png)
+
+
 ![](img/bushfire_Jan2020.png)
+Graph showing the Air Quality Index in December 2019.
 
 ## Key links
 
